@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>履歷 — AU111054055</title>
+  <meta name="description" content="學生 AU111054055 的現代化履歷 (HTML/CSS/JS 單檔)" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7dd3fc; --glass: rgba(255,255,255,0.04);
+      --radius:16px; --glass-2: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{font-family: Inter, "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, 'Microsoft JhengHei'; margin:0; background:linear-gradient(180deg,#071022 0%, #071827 50%); color:#e6eef6; -webkit-font-smoothing:antialiased;}
+    .container{max-width:1100px;margin:36px auto;padding:28px;display:grid;grid-template-columns:360px 1fr;gap:28px}
+    .card{background:linear-gradient(180deg,var(--card), rgba(12,18,28,0.6));border-radius:var(--radius);padding:22px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+    .avatar{width:100%;height:220px;border-radius:12px;overflow:hidden;}
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:12px;}
+    h1{margin:8px 0 2px;font-size:20px}
+    .id{color:var(--muted);font-size:13px;margin-bottom:10px}
+    .contact{display:flex;flex-direction:column;gap:8px;font-size:14px}
+    .chip{background:var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);display:inline-flex;align-items:center;gap:8px}
+    .section-title{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin:18px 0 8px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:#eaf6ff}
+    .progress{margin:8px 0;border-radius:12px;background:var(--glass-2);height:12px;overflow:hidden}
+    .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#60a5fa);}
+    .profile{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+    .headline{font-size:14px;color:#dff6ff;line-height:1.4}
+    .actions{display:flex;gap:8px}
+    .btn{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.04);padding:10px 12px;border-radius:10px;cursor:pointer;color:var(--accent);font-weight:600;transition:all 0.2s ease}
+    .btn:hover{transform:scale(1.05);background:rgba(255,255,255,0.08)}
+    .btn.ghost{background:transparent;color:var(--muted);border:1px dashed rgba(255,255,255,0.03)}
+    .timeline{display:flex;flex-direction:column;gap:14px}
+    .item{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .item h3{margin:0;font-size:15px}
+    .meta{color:var(--muted);font-size:13px;margin-top:6px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .tag{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:12px;color:var(--muted)}
+    .projects-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+    @media (max-width:880px){.container{grid-template-columns:1fr;padding:18px}.avatar{height:160px}.profile{flex-direction:column;align-items:flex-start}.actions{width:100%;justify-content:flex-start}}
+    @media print{body{background:white;color:black} .container{box-shadow:none} .btn, .actions {display:none}}
+  </style>
+</head>
+<body>
+  <div id="resumeContent" class="container">
+    <aside class="card">
+      <div class="avatar"><img src="image/photo.jpg" alt="個人照片"></div>
+      <h1>Isaac</h1>
+      <div class="id">學號: <strong>AU111054055</strong></div>
+      <p class="chip">🎯 目標：應徵前端 / UI 設計實習</p>
+      <div class="section-title">聯絡資訊</div>
+      <div class="contact">
+        <div class="chip">✉️ &nbsp;email@example.com</div>
+        <div class="chip">📱 &nbsp;+886 9xx xxxx</div>
+        <div class="chip">🌐 &nbsp;github.com/yourname</div>
+      </div>
+      <div class="section-title">技能</div>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS / SCSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Figma</div>
+        <div class="skill">UI 設計</div>
+      </div>
+      <div class="section-title">能力指標</div>
+      <div>
+        <div style="display:flex;justify-content:space-between;font-size:13px"><span>前端開發</span><span>85%</span></div>
+        <div class="progress" aria-hidden><i style="width:85%"></i></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px"><span>UI/視覺設計</span><span>78%</span></div>
+        <div class="progress" aria-hidden><i style="width:78%"></i></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px"><span>團隊協作</span><span>90%</span></div>
+        <div class="progress" aria-hidden><i style="width:90%"></i></div>
+      </div>
+      <div class="section-title">語言</div>
+      <div class="tags">
+        <div class="tag">中文（母語）</div>
+        <div class="tag">英文（中等）</div>
+      </div>
+      <div class="section-title">證照 / 加分項</div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:6px">
+        <div class="chip">UX 設計工作坊 (2024)</div>
+        <div class="chip">前端基礎線上課程</div>
+      </div>
+    </aside>
+    <main>
+      <div class="card" style="padding:20px">
+        <div class="profile">
+          <div>
+            <div class="headline">多才多藝的前端初學者，熱衷於將設計感融入互動式介面。善用 HTML/CSS 與 JavaScript 打造清爽、響應式體驗；喜歡用手繪元素與柔和的配色增加人情味。</div>
+            <div style="margin-top:12px;color:var(--muted);font-size:13px">可列出更多個人敘述、求職目標或作品亮點。</div>
+          </div>
+          <div class="actions">
+            <button class="btn" id="downloadBtn">下載 PDF</button>
+            <button class="btn ghost" id="toggleTheme">切換主題</button>
+          </div>
+        </div>
+        <div style="margin-top:18px">
+          <div class="section-title">學歷</div>
+          <div class="timeline">
+            <div class="item">
+              <h3>某某大學 — 資訊設計系</h3>
+              <div class="meta">2021 - 2025（在學中） • 主修：互動設計</div>
+              <div class="tags"><div class="tag">GPA: 3.6/4.0</div><div class="tag">相關課程：網頁設計、互動程式</div></div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:14px">
+          <div class="section-title">實務經驗</div>
+          <div class="timeline" id="expList">
+            <div class="item">
+              <h3>前端實習生 — 範例科技</h3>
+              <div class="meta">2024/06 — 2024/09</div>
+              <p style="margin-top:8px;color:var(--muted)">參與公司主站的 UI 優化，與設計師合作完成響應式切版，並使用 JavaScript 優化互動元件。</p>
+              <div class="tags"><div class="tag">HTML</div><div class="tag">CSS</div><div class="tag">JavaScript</div></div>
+            </div>
+            <div class="item">
+              <h3>校內專案 — 智能課表系統</h3>
+              <div class="meta">2023/09 — 2024/02</div>
+              <p style="margin-top:8px;color:var(--muted)">擔任前端負責人，建立動態課程查詢介面，並串接假資料做展示與互動。</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:14px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div class="section-title">作品集</div>
+            <div style="font-size:13px;color:var(--muted)">點擊篩選獲得快速預覽</div>
+          </div>
+          <div class="projects-filter" id="projectFilters">
+            <button class="btn ghost" data-filter="all">全部</button>
+            <button class="btn" data-filter="web">網頁</button>
+            <button class="btn ghost" data-filter="ui">UI 設計</button>
+            <button class="btn ghost" data-filter="script">互動</button>
+          </div>
+          <div class="timeline" id="projects">
+            <div class="item project" data-type="web">
+              <h3>個人作品：響應式作品集網站</h3>
+              <div class="meta">技術：HTML / CSS / JS</div>
+              <p style="margin-top:8px;color:var(--muted)">一頁式作品集，包含響應式布局、CSS 動畫與專案互動預覽。</p>
+            </div>
+            <div class="item project" data-type="ui">
+              <h3>UI 設計：電商 App 流程稿</h3>
+              <div class="meta">工具：Figma</div>
+              <p style="margin-top:8px;color:var(--muted)">設計完整購物流程，並產出高傳真介面稿與元件庫。</p>
+            </div>
+            <div class="item project" data-type="script">
+              <h3>互動小作品：Canvas 手寫板</h3>
+              <div class="meta">技術：Canvas API / JS</div>
+              <p style="margin-top:8px;color:var(--muted)">以純 JS 實作手寫簽名板，支援筆刷粗細與清除功能。</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:14px">
+          <div class="section-title">獎項 / 社團</div>
+          <div class="timeline">
+            <div class="item">
+              <h3>校內設計比賽 — 二等獎</h3>
+              <div class="meta">2023</div>
+            </div>
+            <div class="item">
+              <h3>社團：互動設計社 — 幹部</h3>
+              <div class="meta">2022 - 現在</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    document.getElementById('downloadBtn').addEventListener('click', function(){
+      const resume = document.getElementById('resumeContent');
+      const opt = {
+        margin: 0.5,
+        filename: 'AU111054055_履歷.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().from(resume).set(opt).save();
+    });
+
+    const root = document.documentElement;
+    let dark = true;
+    document.getElementById('toggleTheme').addEventListener('click', ()=>{
+      dark = !dark;
+      if(!dark){
+        root.style.setProperty('--bg','#ffffff');
+        root.style.setProperty('--card','#ffffff');
+        root.style.setProperty('--muted','#4b5563');
+        root.style.setProperty('--accent','#2563eb');
+        document.body.style.color = '#04263a';
+      } else {
+        root.style.setProperty('--bg','#0f1724');
+        root.style.setProperty('--card','#0b1220');
+        root.style.setProperty('--muted','#9aa4b2');
+        root.style.setProperty('--accent','#7dd3fc');
+        document.body.style.color = '';
+      }
+    });
+
+    const filters = document.querySelectorAll('#projectFilters [data-filter]');
+    const projects = document.querySelectorAll('.project');
+    filters.forEach(btn=> btn.addEventListener('click', ()=>{
+      const f = btn.dataset.filter;
+      filters.forEach(b=> b.classList.remove('active'));
+      btn.classList.add('active');
+      projects.forEach(p=>{
+        if(f === 'all' || p.dataset.type === f) p.style.display = '';
+        else p.style.display = 'none';
+      })
+    }));
+  </script>
+</body>
+</html>
